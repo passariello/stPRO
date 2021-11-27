@@ -1,14 +1,14 @@
 {
-  "name": "statepro",
+  "name": "stpro",
   "version": "0.0.1",
-  "description": "State management easy and poweful",
+  "description": "Store and state manager easy and powerful",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "statePRO"
+    "url": "stPRO"
   },
   "keywords": [
     "state",
@@ -20,5 +20,8 @@
     "passariello"
   ],
   "author": "Dario Passariello",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jshint": "^2.13.1"
+  }
 }

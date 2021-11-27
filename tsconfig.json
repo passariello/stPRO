@@ -1,0 +1,66 @@
+{
+  "compilerOptions" : {
+    "lib" : [
+      "es2020",
+      "es2016.array.include",
+      "es2017.object",
+      "es5",
+      "es6",
+      "dom",
+      "dom.iterable"
+    ],
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl" : ".",
+    "outDir" : "./build/",
+    "module" : "commonjs",
+    "preserveConstEnums" : true,
+    "removeComments" : true,
+    "sourceMap" : true,
+    "target" : "es6",
+    "moduleResolution" : "node",
+    "allowJs" : true,
+    "noEmit" : true,
+    "strict" : true,
+    "esModuleInterop" : true,
+    "jsx" : "react",
+    "strictNullChecks" : false,
+    "noImplicitAny" : false,
+    "strictPropertyInitialization" : false,
+
+    "paths": {
+      "Assets/*":     ["public/assets/*"],
+      "Components/*": ["src/components/*"],
+      "Include/*":    ["src/shared/include/*"],
+      "Modals/*":     ["src/shared/modals/*"],
+      "Reports/*":    ["src/shared/reports/*"],
+      "Shared/*":     ["src/shared/*"],
+      "App/*":        ["src/app/*"],
+      "Config/*":     ["src/config/*"],
+      "Data/*":       ["src/data/*"],
+      "Pages/*":      ["src/pages/*"],
+      "Scripts/*":    ["src/scripts/*"],
+      "Styles/*":     ["src/styles/*"],
+      "Typing/*":     ["src/typing/*"],
+      "Utils/*":      ["src/utils/*"],
+      "Validators/*": ["src/validators/*"],
+      "Layout/*":     ["src/layout/*"],
+      "Root/*":       ["src/*"]
+    }
+
+  },
+
+  "includes" : [
+    "./*"
+  ],
+
+  "exclude": [
+    "node_modules",
+    ".OLD"
+  ]
+
+}
