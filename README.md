@@ -1,2 +1,2 @@
-# statePRO
- State data management easy and powerful
+# stPRO
+ Store and state manager easy and powerful
