@@ -1,0 +1,24 @@
+{
+  "name": "statepro",
+  "version": "0.0.1",
+  "description": "State management easy and poweful",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "statePRO"
+  },
+  "keywords": [
+    "state",
+    "window",
+    "store",
+    "easy",
+    "pro",
+    "powerful",
+    "passariello"
+  ],
+  "author": "Dario Passariello",
+  "license": "Apache-2.0"
+}
