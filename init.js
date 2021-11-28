@@ -33,7 +33,7 @@
   stpro.dispatch = {};
 
   // FIRST MESSAGE
-  console.groupCollapsed( '%cstPRO General%c',"color:orange","" );
+  console.groupCollapsed( `%cstPRO v${pjson.version}%c`,"color:orange","" );
     console.debug( `%cstPRO v${pjson.version}%c by Dario Passariello started`,"color:orange","" );
     console.debug( "%cType stpro in this console to see it", "color:gray","" );
     console.debug( "%cFor help visit: " + pjson.repository.help, "color:gray","" );
