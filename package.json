@@ -1,15 +1,24 @@
 {
   "name": "stpro",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Store and state manager easy and powerful",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "deprecated": false,
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "repository": {
     "type": "git",
-    "url": "stPRO"
+    "url": "https://github.com/passariello/stPRO",
+    "help": "https://github.com/passariello/stPRO#readme"
   },
+    "bugs": {
+    "url": "https://github.com/passariello/stPRO/issues"
+  },
+  "homepage": "https://github.com/passariello/stPRO",
   "keywords": [
     "state",
     "window",
@@ -19,9 +28,23 @@
     "powerful",
     "passariello"
   ],
-  "author": "Dario Passariello",
+  "author": {
+    "name": "Dario Passariello",
+    "website": "https://dario.passariello.ca",
+    "email": "dariopassariello@gmail.com"
+  },
   "license": "Apache-2.0",
   "dependencies": {
     "jshint": "^2.13.1"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Dario Passariello",
+      "email": "dariopassariello@gmail.com"
+    },
+    {
+      "name": "Valeria Cala Scaglitta",
+      "email": "valeriacalascaglitta@gmail.com"
+    }
+  ]
 }
