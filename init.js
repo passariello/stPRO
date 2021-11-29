@@ -31,7 +31,7 @@
   // FIRST MESSAGE
   console.groupCollapsed( `%c${pjson.name} v${pjson.version}%c`,"color:orange","" );
     console.debug( `%c${pjson.name} v${pjson.version}%c by Dario Passariello started`,"color:orange","" );
-    console.debug( "%cType stpro in this console to see it", "color:gray","" );
+    console.debug( `%cType ${pjson.name} in this console to see it`, "color:gray","" );
     console.debug( "%cFor help visit: " + pjson.repository.help, "color:gray","" );
     console.debug( 'name: %c' + pjson.name,"color:orange","" );
     console.debug( 'version: %c' + pjson.version,"color:orange","" );
@@ -41,7 +41,5 @@
     console.debug( 'author: %c' + pjson.author.name,"color:orange","" );
     console.debug( 'email: %c' + pjson.author.email,"color:orange","" );
   console.groupEnd();
-
-  require('./scripts/funcs.js');
 
 })();
