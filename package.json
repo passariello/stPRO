@@ -1,6 +1,6 @@
 {
   "name": "stpro",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Store and state manager easy and powerful",
   "main": "index.js",
   "scripts": {
@@ -35,8 +35,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "dphelper": "0.0.4",
-    "jshint": "^2.13.1"
+    "dphelper": "latest",
+    "jshint": "^2.13.1",
+    "package-dependents": "^2.0.2"
   },
   "contributors": [
     {
