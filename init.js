@@ -12,15 +12,10 @@
   const pjson = require('./package.json');
 
   // CREATE ROOT STORE
-  var stpro = window.stpro = {};
+  window.stpro = {};
 
   // SETUP STORES
-  stpro.pref = {
-    indexedDB: false,
-    storage: true,
-    cookie: true
-  };
-
+  stpro.pref = {};
   stpro.api = {};
   stpro.auth = {};
   stpro.store = {};
@@ -33,8 +28,8 @@
   stpro.dispatch = {};
 
   // FIRST MESSAGE
-  console.groupCollapsed( `%cstPRO v${pjson.version}%c`,"color:orange","" );
-    console.debug( `%cstPRO v${pjson.version}%c by Dario Passariello started`,"color:orange","" );
+  console.groupCollapsed( `%c${pjson.name} v${pjson.version}%c`,"color:orange","" );
+    console.debug( `%c${pjson.name} v${pjson.version}%c by Dario Passariello started`,"color:orange","" );
     console.debug( "%cType stpro in this console to see it", "color:gray","" );
     console.debug( "%cFor help visit: " + pjson.repository.help, "color:gray","" );
     console.debug( 'name: %c' + pjson.name,"color:orange","" );
@@ -47,8 +42,5 @@
   console.groupEnd();
 
   require('./scripts/funcs.js');
-  if(stpro.pref.cookie) require('./scripts/cookie.js');
-  if(stpro.pref.storage) require('./scripts/storage.js');
-  if(stpro.pref.indexedDB) require('./scripts/indexedDB.js');
 
 })();

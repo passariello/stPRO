@@ -1,6 +1,6 @@
 {
   "name": "stpro",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Store and state manager easy and powerful",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "url": "https://github.com/passariello/stPRO",
     "help": "https://github.com/passariello/stPRO#readme"
   },
-    "bugs": {
+  "bugs": {
     "url": "https://github.com/passariello/stPRO/issues"
   },
   "homepage": "https://github.com/passariello/stPRO",
@@ -35,6 +35,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "dphelper": "0.0.4",
     "jshint": "^2.13.1"
   },
   "contributors": [
