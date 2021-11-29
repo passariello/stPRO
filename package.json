@@ -1,6 +1,6 @@
 {
   "name": "stpro",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Store and state manager easy and powerful",
   "main": "index.js",
   "scripts": {

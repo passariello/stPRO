@@ -8,7 +8,8 @@
 /***********************************************************************/
 
 (function () {
-
+  
+  require("dphelper");
   const pjson = require('./package.json');
 
   // CREATE ROOT STORE
