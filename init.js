@@ -43,10 +43,10 @@
   console.groupEnd();
   
   // API MANAGER
-  require('./scripts/api.manager.json');
+  require('./scripts/api.manager.js');
   // STATE MANAGER
-  require('./scripts/state.manager.json');
+  require('./scripts/state.manager.js');
   // STORE MANAGER
-  require('./scripts/store.manager.json');
+  require('./scripts/store.manager.js');
 
 })();

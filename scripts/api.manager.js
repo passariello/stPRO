@@ -13,20 +13,20 @@ stpro.func.api = {
   set: function( name, value , opt ){
     if( !name ) return false;
     if( name && Array.isArray(value) || value instanceof Object && Array.isArray(opt) || opt instanceof Object ) {
-      stpro.api[name] = [];
-      stpro.api[name].push( value );
-      stpro.api[name].push( time = new Date().getTime() );
-      if( opt.update = false ) stpro.api[name].push( update = false );
-      return "set test " + value;
+      stpro.api[name] = {};
+      stpro.api[name] = value;
+      Object.assign(stpro.api[name], { time: new Date().getTime()} );
+      if( opt.update = false ) Object.assign(stpro.api[name], ( update = false ) );
+      return "set " + name;
     }
     return;
   },
 
   // UPDATE
   // ******************************************************************************/
-  update: function( name, value={} , opt={} ){
+  update: function( name, value , opt ){
     if( !name ) return false;
-    const edit = stpro.api.get( name ) || '';
+    const edit = stpro.func.api.get( name ) || '';
     if( !edit ){
       console.debug( `stpro > update error: ${ name } not exist` );
       return null;
@@ -36,21 +36,22 @@ stpro.func.api = {
     }else{
       stpro.func.api.set( name, value , opt );
     }
-    return "set test " + value;
+    return "update " + name;
   },
 
   // DELETE
   // ******************************************************************************/
   delete: function( name ){
+    if( !name ) return false;
     delete stpro.api[name];
-    return "delete test " + value;
+    return "delete " + name;
   },
 
   // CLEAR ALL
   // ******************************************************************************/
   clearAll: function(){
     stpro.api = {};
-    return "clearAll test " + value;
+    return "clearAll api";
   }
 
 };
