@@ -6,7 +6,7 @@
  in the index:
  
  ```js
-import "stmodel"
+import "stpro"
 ```
 
 type 'stpro' in your console to have a look about your stores (api, store, state,...)
