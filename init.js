@@ -16,8 +16,8 @@
   window.stpro = {};
 
   // SETUP STORES
-  stpro.pref = {};
   stpro.api = {};
+  stpro.pref = {};
   stpro.auth = {};
   stpro.store = {};
   stpro.state = {};
@@ -41,5 +41,12 @@
     console.debug( 'author: %c' + pjson.author.name,"color:orange","" );
     console.debug( 'email: %c' + pjson.author.email,"color:orange","" );
   console.groupEnd();
+  
+  // API MANAGER
+  require('./scripts/api.manager.json');
+  // STATE MANAGER
+  require('./scripts/state.manager.json');
+  // STORE MANAGER
+  require('./scripts/store.manager.json');
 
 })();
