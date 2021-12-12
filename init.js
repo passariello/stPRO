@@ -9,6 +9,10 @@
 
 (function () {
   
+  if (typeof window === 'undefined') {
+    global.window = {};
+  }
+  
   require("dphelper");
   const pjson = require('./package.json');
 
@@ -16,17 +20,17 @@
   window.stpro = {};
 
   // SETUP STORES
-  stpro.api = {};
-  stpro.pref = {};
-  stpro.auth = {};
-  stpro.store = {};
-  stpro.state = {};
-  stpro.cache = {};
-  stpro.history = {};
-  stpro.func = {};
-  stpro.trigger = {};
-  stpro.procedure = {};
-  stpro.dispatch = {};
+  window.stpro.api = {};
+  window.stpro.pref = {};
+  window.stpro.auth = {};
+  window.stpro.store = {};
+  window.stpro.state = {};
+  window.stpro.cache = {};
+  window.stpro.history = {};
+  window.stpro.func = {};
+  window.stpro.trigger = {};
+  window.stpro.procedure = {};
+  window.stpro.dispatch = {};
 
   // FIRST MESSAGE
   console.groupCollapsed( `%c${pjson.name} v${pjson.version}%c`,"color:orange","" );
