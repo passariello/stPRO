@@ -1,6 +1,6 @@
 {
   "name": "stpro",
-  "version": "0.1.92",
+  "version": "0.1.93",
   "description": "Api, Store & State manager easy and powerful",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "jshint": "^2.13.1",
+    "follow-redirects": "^1.14.7",
+    "jshint": "^2.13.3",
     "package-dependents": "^2.0.2"
   },
   "contributors": [
